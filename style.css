@@ -12,6 +12,7 @@ body {
     height: 100vh; /* Preenche a altura total da viewport */
 }
 
+
 h1 {
     font-size: 2.5rem; /* Tamanho da fonte */
     color: #222831; /* Cor do texto */
@@ -25,6 +26,7 @@ a {
 }
 
 h4 {
+    margin-top: -2px;
     font-size: 1.0rem; /* Tamanho da fonte */
     color: #222831; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
@@ -32,10 +34,17 @@ h4 {
 }
 
 /* tentar fazer ficar responsivo */
-@media (max-width: 450px) {
+@media (min-width: 300px) and (max-width: 450px) {
     body {
+        font-family: "Chakra Petch", sans-serif;
+        background-color: #dddddd;
         margin: 0;
-        height: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        flex-direction: column; /* Alinha os itens na vertical */
+        height: 100vh; /* Preenche a altura total da viewport */
     }
     
     header {
@@ -44,12 +53,13 @@ h4 {
         left: 0;
         width: 100%;
         text-align: center; /* Centraliza o texto */
-        margin-top: 50px; /* Remove a margem superior padrão */
+        margin-top: 05px; /* Remove a margem superior padrão */
     }
 
     h4 {
-        font-size: 1.5rem;
-        margin-top: 200px;
+        font-weight: 500;
+        font-size: 1.4rem;
+        margin-top: 100px;
         position: fixed;
         top: 0;
         left: 0;
@@ -57,4 +67,63 @@ h4 {
         text-align: center; /* Centraliza o texto */
     }
 }
+    
+@media (min-width: 1900px) and (max-width: 2000px) {
+    body {
+        font-family: "Chakra Petch", sans-serif;
+        background-color: #dddddd;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        flex-direction: column; /* Alinha os itens na vertical */
+        height: 100vh; /* Preenche a altura total da viewport */
+    }
+
+    h1 {
+        font-size: 4.5rem; /* Tamanho da fonte */
+        color: #222831; /* Cor do texto */
+        text-align: center; /* Alinha o texto ao centro */
+        letter-spacing: 0.4rem; /* Espaçamento entre letras */
+        cursor: pointer
+    }
+
+    h4 {
+        font-size: 1.5rem; /* Tamanho da fonte */
+        color: #222831; /* Cor do texto */
+        text-align: center; /* Alinha o texto ao centro */
+        letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    }
+}
+
+@media (min-width: 2000px) and (max-width: 3000px) {
+    body {
+        font-family: "Chakra Petch", sans-serif;
+        background-color: #dddddd;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        flex-direction: column; /* Alinha os itens na vertical */
+        height: 100vh; /* Preenche a altura total da viewport */
+    }
+
+    h1 {
+        font-size: 4.5rem; /* Tamanho da fonte */
+        color: #222831; /* Cor do texto */
+        text-align: center; /* Alinha o texto ao centro */
+        letter-spacing: 0.4rem; /* Espaçamento entre letras */
+        cursor: pointer
+    }
+
+    h4 {
+        font-size: 2.0rem; /* Tamanho da fonte */
+        color: #222831; /* Cor do texto */
+        text-align: center; /* Alinha o texto ao centro */
+        letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    }
+}
+
 /* aprender a como deixar responsivo, n aguento mais */
